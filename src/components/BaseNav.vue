@@ -71,7 +71,6 @@ export default {
     
     @media (max-width: 700px){
         justify-content: start;
-        margin: 10px 20px;
         position: absolute;
         top: auto;
         left: 0px;

@@ -4,13 +4,13 @@
   
     <image-opened/>
     <custom-cursor/>
-    <canvas-bg/>
+    <!-- <canvas-bg/> -->
     
     <div class="main__wrapper">
 
-      <!-- <div class="main__router-container"> -->
+      <div class="main__router-container block">
         <!-- <router-view/> -->
-      <!-- </div> -->
+      </div>
       
       <base-nav class="main__nav block"/>
       
@@ -46,7 +46,6 @@ methods: {
 </script>
 <style lang="scss" scoped>
 
-
 .main {
   //display: flex;
   //justify-content: center;
@@ -55,44 +54,58 @@ methods: {
   overflow: hidden;
 
   &__wrapper{
-    width: 1280px;
+    max-width: 1280px;
     position: relative;
     margin: auto;
     height: 100%;
     overflow: visible;
     
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 20px;
     
 
     @media (max-width: 1400px){
-      width: 100%;
-      box-sizing: border-box;
-      margin: 0px;
+      //width: 100%;
+      //box-sizing: border-box;
+      //margin: 0px;
     }
     @media (max-width: 700px){
-      padding: 0px;
-      height: 82vh;
+      padding: 20px;
+      //height: 82vh;
     }
   }
   
   &__router-container{
+    //margin-top: 32px;
+    //height: calc( 100vh - 45px - var(--gap)*2 );
+    //margin-bottom: var(--gap);
+    //box-sizing: border-box;
+    //color:var(--main-color);
+    //padding: 20px 0px;
+    
     height: 100%;
-    box-sizing: border-box;
-    color:var(--main-color);
-    padding: 20px 0px;
+    
 
     @media (max-width: 700px){
-      padding: 20px;
-      overflow-y: scroll;
-      box-sizing: border-box;
+      
+      //height: calc( 100%);
+      //padding: 20px;
+      //overflow-y: scroll;
+      //box-sizing: border-box;
     }
   }
 
   &__nav{
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+
+    @media (max-width: 700px){
+      display: flex;
+      position: sticky;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
   }
 }
 </style>
