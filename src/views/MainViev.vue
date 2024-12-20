@@ -1,5 +1,5 @@
 <template>
-  <main class="main-page">
+  <main class="main">
 
         <ava-player class="main__ava-prev block"/>
 
@@ -72,7 +72,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  .main-page{
+  .main{
     height: 100%;
     display: grid; 
     grid-auto-columns: 1fr; 
@@ -130,15 +130,6 @@ export default {
         flex-direction: column;
         right: -73px;
         border-radius: 10px;
-      
-        a{
-          color:var(--text-color);
-          margin-bottom: 5px;
-
-          @media (max-width: 700px){
-            margin-bottom: 0px;
-          }
-        }
 
         @media (max-width: 700px){
           flex-direction: row;
@@ -147,6 +138,15 @@ export default {
           align-items: center;
           line-height: 0px;
           padding: 10px;
+        }
+      
+        a{
+          color:var(--text-color);
+          margin-bottom: 5px;
+
+          @media (max-width: 700px){
+            margin-bottom: 0px;
+          }
         }
       }
   }

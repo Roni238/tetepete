@@ -1,19 +1,15 @@
 <template>
-  <div class="main">
+  <div class="app">
 
   
     <image-opened/>
     <custom-cursor/>
     <!-- <canvas-bg/> -->
     
-    <div class="main__wrapper">
-
-      <!-- <div class="main__router-container block"> -->
-        <router-view/>
-      <!-- </div> -->
+    <div class="app__wrapper">
+      <router-view/>
       
-      <base-nav class="main__nav block"/>
-      
+      <base-nav class="app__nav block"/>
     </div>
   </div>
 </template>
@@ -46,19 +42,15 @@ methods: {
 </script>
 <style lang="scss" scoped>
 
-.main {
-  //display: flex;
-  //justify-content: center;
-  //flex-direction: column;
+.app {
   height: 100vh;
-  overflow: hidden;
 
   &__wrapper{
     max-width: 1320px;
     position: relative;
     margin: auto;
     height: 100%;
-    overflow: visible;
+    overflow: scroll;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -68,36 +60,13 @@ methods: {
 
     @media (max-width: 1400px){
       height: calc(100% - 65px);
-      overflow: hidden;
-      //width: 100%;
-      //box-sizing: border-box;
-      //margin: 0px;
     }
     @media (max-width: 700px){
-      
-      //height: 82vh;
+      padding: 20px;
     }
   }
   
-  &__router-container{
-    //margin-top: 32px;
-    //height: calc( 100vh - 45px - var(--gap)*2 );
-    //margin-bottom: var(--gap);
-    //box-sizing: border-box;
-    //color:var(--main-color);
-    //padding: 20px 0px;
-    
-    height: 100%;
-    
-
-    @media (max-width: 700px){
-      //height: calc( 100% - 145px);
-      //height: calc( 100%);
-      //padding: 20px;
-      //overflow-y: scroll;
-      //box-sizing: border-box;
-    }
-  }
+  
 
   &__nav{
       display: flex;
@@ -105,13 +74,14 @@ methods: {
       bottom: 0;
       left: 0;
       right: 0;
-    @media (max-width: 700px){
-      display: flex;
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      right: 20px;
-    }
+
+      @media (max-width: 700px){
+        display: flex;
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+      }
   }
 }
 </style>
