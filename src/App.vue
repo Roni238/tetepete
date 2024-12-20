@@ -98,7 +98,11 @@ methods: {
   }
 
   &__nav{
-
+    display: flex;
+      position: sticky;
+      bottom: 0;
+      left: 0;
+      right: 0;
     @media (max-width: 700px){
       display: flex;
       position: sticky;
