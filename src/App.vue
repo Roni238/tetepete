@@ -98,14 +98,14 @@ methods: {
   }
 
   &__nav{
-    display: flex;
+      display: flex;
       position: sticky;
       bottom: 0;
       left: 0;
       right: 0;
     @media (max-width: 700px){
       display: flex;
-      position: sticky;
+      position: fixed;
       bottom: 0;
       left: 0;
       right: 0;
