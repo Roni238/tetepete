@@ -8,9 +8,9 @@
     
     <div class="main__wrapper">
 
-      <div class="main__router-container block">
+      <!-- <div class="main__router-container block"> -->
         <!-- <router-view/> -->
-      </div>
+      <!-- </div> -->
       
       <base-nav class="main__nav block"/>
       
