@@ -8,11 +8,11 @@
     
     <div class="main__wrapper">
 
-      <div class="main__router-container block">
-        <!-- <router-view/> -->
-      </div>
+      <!-- <div class="main__router-container block"> -->
+        <router-view/>
+      <!-- </div> -->
       
-      <!-- <base-nav class="main__nav block"/> -->
+      <base-nav class="main__nav block"/>
       
     </div>
   </div>
@@ -67,6 +67,8 @@ methods: {
     
 
     @media (max-width: 1400px){
+      height: calc(100% - 65px);
+      overflow: hidden;
       //width: 100%;
       //box-sizing: border-box;
       //margin: 0px;
@@ -89,7 +91,7 @@ methods: {
     
 
     @media (max-width: 700px){
-      height: calc( 100% - 145px);
+      //height: calc( 100% - 145px);
       //height: calc( 100%);
       //padding: 20px;
       //overflow-y: scroll;

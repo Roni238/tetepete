@@ -2,6 +2,10 @@ body{
     overflow: hidden;
     background: var(--bg-main-color);
     transition: background-color 0.5s ease;
+
+    @media (max-width: 700px){
+      overflow: auto;
+    }
   }
   #app {
     font-family: 'Radiotechnika', sans-serif;

@@ -1,5 +1,5 @@
 <template>
-  <main class="main">
+  <main class="main-page">
 
         <ava-player class="main__ava-prev block"/>
 
@@ -72,7 +72,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  .main{
+  .main-page{
     height: 100%;
     display: grid; 
     grid-auto-columns: 1fr; 
