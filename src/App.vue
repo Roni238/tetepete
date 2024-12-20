@@ -12,7 +12,7 @@
         <!-- <router-view/> -->
       </div>
       
-      <base-nav class="main__nav block"/>
+      <!-- <base-nav class="main__nav block"/> -->
       
     </div>
   </div>
@@ -89,7 +89,7 @@ methods: {
     
 
     @media (max-width: 700px){
-      height: calc( 100% - 45px);
+      //height: calc( 100% - 45px);
       //height: calc( 100%);
       //padding: 20px;
       //overflow-y: scroll;
