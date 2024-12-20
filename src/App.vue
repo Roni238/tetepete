@@ -54,12 +54,12 @@ methods: {
   overflow: hidden;
 
   &__wrapper{
-    max-width: 1280px;
+    max-width: 1320px;
     position: relative;
     margin: auto;
     height: 100%;
     overflow: visible;
-    
+    padding: 20px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -72,7 +72,7 @@ methods: {
       //margin: 0px;
     }
     @media (max-width: 700px){
-      padding: 20px;
+      
       //height: 82vh;
     }
   }
