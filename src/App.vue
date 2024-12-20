@@ -108,9 +108,9 @@ methods: {
     @media (max-width: 700px){
       display: flex;
       position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
     }
   }
 }
